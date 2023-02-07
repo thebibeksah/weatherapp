@@ -83,8 +83,17 @@
     cursor: pointer;
 }
 .weather-title{
-    margin: 40px 0;
+    margin: 50px 0;
 }
 .weather-title span{
     font-size: 21px;
+}
+.stats{
+    padding-bottom: 30px;
+    border-bottom: 2px solid var(--gray);
+}
+.group{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
 }
