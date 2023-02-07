@@ -14,10 +14,10 @@
           <div class="title"><span>The Weather</span></div>
           <div class="weather-info">
             <div class="temp">
-              <span>17&nbsp;&deg;</span>
+              <span id="temp">17&nbsp;&deg;</span>
             </div>
             <div class="info">
-              <div class="address">Kathmandu</div>
+              <div class="address" id="cityoutput">Kathmandu</div>
               <div class="more-info">
                 <div class="time">11:00 PM</div>
                 <div class="day">Tuesday</div>
@@ -35,7 +35,7 @@
                     <input type="text" id="search">
                 </div>
                 <div class="search-icon">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-magnifying-glass" id="add"></i>
                 </div>
             </div>
             <div class="details">
@@ -44,20 +44,24 @@
                 </div>
                 <div class="stats">
                     <div class="group">
-                        <div class="dtl">Cloudy</div>
-                        <div class="data">12%</div>
+                        <div class="dtl">Sky</div>
+                        <div class="data" id="description">Clear</div>
                     </div>
                     <div class="group">
                         <div class="dtl">Humidity</div>
-                        <div class="data">28%</div>
+                        <div class="data" id="humi">28%</div>
                     </div>
                     <div class="group">
                         <div class="dtl">Wind</div>
-                        <div class="data">9km/hr</div>
+                        <div class="data" id="wind">9km/hr</div>
                     </div>
                     <div class="group">
-                        <div class="dtl">Rain</div>
-                        <div class="data">Slightly</div>
+                        <div class="dtl">Pressure</div>
+                        <div class="data" id="atm">1.2atm</div>
+                    </div>
+                    <div class="group">
+                        <div class="dtl">Visibility</div>
+                        <div class="data" id="visible">1.2km</div>
                     </div>
                 </div>
             </div>
