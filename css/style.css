@@ -61,7 +61,7 @@
     flex-direction: column;
 }
 .input-box label{
-    font-size: 18px;
+    font-size: 22px;
 }
 .input-box input{
     border: none;
@@ -86,14 +86,18 @@
     margin: 50px 0;
 }
 .weather-title span{
-    font-size: 21px;
+    font-size: 24px;
 }
 .stats{
     padding-bottom: 30px;
     border-bottom: 2px solid var(--gray);
+    font-size: 21px;
 }
 .group{
     display: flex;
     justify-content: space-between;
     margin: 10px 0;
+}
+.address{
+    font-size: 38px;
 }
