@@ -47,57 +47,76 @@
 .second-section {
   height: 100vh;
   width: 30%;
-  background-image: linear-gradient(to bottom right, rgb(208, 167, 90), rgb(174, 81, 81));
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(208, 167, 90),
+    rgb(174, 81, 81)
+  );
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   color: var(--gray);
 }
 
-.site-info{
-    padding: 100px 40px;
+.site-info {
+  padding: 100px 40px;
 }
-.input-box{
-    display: flex;
-    flex-direction: column;
+.input-box {
+  display: flex;
+  flex-direction: column;
 }
-.input-box label{
-    font-size: 22px;
+.input-box label {
+  font-size: 22px;
 }
-.input-box input{
-    border: none;
-    outline: none;
-    background-color: transparent;
-    border-bottom: 2px solid var(--gray);
-    padding: 5px 0;
-    color: var(--gray);
-    font-size: 18px;
-    padding-right: 40px;
+.input-box input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 2px solid var(--gray);
+  padding: 5px 0;
+  color: var(--gray);
+  font-size: 18px;
+  padding-right: 40px;
 }
-.search-icon{
-    display: flex;
-    justify-content: right;
+.search-icon {
+  display: flex;
+  justify-content: right;
 }
-.search-icon i{
-    position: relative;
-    bottom: 28px;
-    cursor: pointer;
+.search-icon i {
+  position: relative;
+  bottom: 28px;
+  cursor: pointer;
 }
-.weather-title{
-    margin: 50px 0;
+.weather-title {
+  margin: 50px 0;
 }
-.weather-title span{
-    font-size: 24px;
+.weather-title span {
+  font-size: 24px;
 }
-.stats{
-    padding-bottom: 30px;
-    border-bottom: 2px solid var(--gray);
-    font-size: 21px;
+.stats {
+  padding-bottom: 30px;
+  border-bottom: 2px solid var(--gray);
+  font-size: 21px;
 }
-.group{
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 0;
+.group {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
 }
-.address{
-    font-size: 38px;
+.address {
+  font-size: 38px;
+}
+.warning {
+  background: #ff3227;
+  padding: 5px 15px;
+  color: var(--gray);
+  border-radius: 15px;
+  margin: 30px 0;
+  display: none;
+}
+.cross i{
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.cross i:hover{
+  color: #c3b9b8;
 }

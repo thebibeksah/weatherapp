@@ -10,6 +10,8 @@ let visible = document.querySelector('#visible');
 let time1 = document.querySelector('#time');
 let day1 = document.querySelector('#day');
 let date1 = document.querySelector('#date');
+let cross = document.querySelector('#cross');
+let warning = document.querySelector('#warning');
 
 let time = new Date().toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit' });
 let day = new Date().toLocaleDateString("en-US", { weekday: 'long' });
@@ -46,17 +48,25 @@ btn.addEventListener('click', function()
     humi.innerHTML = `${humidity}%`
     press.innerHTML = `${(pressure/760).toFixed(2)} atm`
     visible.innerHTML = `${(visibility/1000).toFixed(1)} km`
+
+    warning.style.display = "none";
+    inputval.value = null;
   })
 
-  .catch(err => alert('You entered Wrong city name'))
+  .catch(err => warning.style.display = "flex")
 })
 
 inputval.addEventListener("keyup", function(event) {
     if (event.keyCode === 13) {
       btn.click();
+      warning.style.display = "none";
     }
 });
 
 time1.innerHTML = `${time}`
 day1.innerHTML = `${day}`
 date1.innerHTML = `${date}`
+
+cross.addEventListener("click", () => {
+  warning.style.display = "none";
+})

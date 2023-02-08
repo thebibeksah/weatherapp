@@ -29,46 +29,53 @@
       </div>
       <div class="second-section">
         <div class="site-info">
-            <div class="search-box">
-                <div class="input-box">
-                    <label for="search">Seach Location</label>
-                    <input type="text" id="search">
-                </div>
-                <div class="search-icon">
-                    <i class="fa-solid fa-magnifying-glass" id="add"></i>
-                </div>
+          <div class="search-box">
+            <div class="input-box">
+              <label for="search">Seach Location</label>
+              <input type="text" id="search" />
             </div>
-            <div class="details">
-                <div class="weather-title">
-                    <span>Weather Details</span>
-                </div>
-                <div class="stats">
-                    <div class="group">
-                        <div class="dtl">Sky</div>
-                        <div class="data" id="description"></div>
-                    </div>
-                    <div class="group">
-                        <div class="dtl">Humidity</div>
-                        <div class="data" id="humi"></div>
-                    </div>
-                    <div class="group">
-                        <div class="dtl">Wind</div>
-                        <div class="data" id="wind"></div>
-                    </div>
-                    <div class="group">
-                        <div class="dtl">Pressure</div>
-                        <div class="data" id="atm"></div>
-                    </div>
-                    <div class="group">
-                        <div class="dtl">Visibility</div>
-                        <div class="data" id="visible"></div>
-                    </div>
-                </div>
+            <div class="search-icon">
+              <i class="fa-solid fa-magnifying-glass" id="add"></i>
             </div>
+          </div>
+          <div class="details">
+            <div class="weather-title">
+              <span>Weather Details</span>
+            </div>
+            <div class="stats">
+              <div class="group warning" id="warning">
+                <div class="dtl">You entered wrong city name</div>
+                <div class="data cross" id="cross"><i class="fa-solid fa-xmark"></i></div>
+              </div>
+              <div class="group">
+                <div class="dtl">Sky</div>
+                <div class="data" id="description"></div>
+              </div>
+              <div class="group">
+                <div class="dtl">Humidity</div>
+                <div class="data" id="humi"></div>
+              </div>
+              <div class="group">
+                <div class="dtl">Wind</div>
+                <div class="data" id="wind"></div>
+              </div>
+              <div class="group">
+                <div class="dtl">Pressure</div>
+                <div class="data" id="atm"></div>
+              </div>
+              <div class="group">
+                <div class="dtl">Visibility</div>
+                <div class="data" id="visible"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </body>
   <script src="js/script.js"></script>
-  <script src="https://kit.fontawesome.com/63e1e881c1.js" crossorigin="anonymous"></script>
+  <script
+    src="https://kit.fontawesome.com/63e1e881c1.js"
+    crossorigin="anonymous"
+  ></script>
 </html>
